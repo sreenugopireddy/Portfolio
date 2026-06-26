@@ -1,9 +1,13 @@
 import { motion } from "motion/react";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
+
+type Particle = { id: number; x: number; y: number; size: number; duration: number; delay: number };
 
 export function AnimatedBackground() {
-  const particles = useMemo(
-    () =>
+  const [particles, setParticles] = useState<Particle[]>([]);
+
+  useEffect(() => {
+    setParticles(
       Array.from({ length: 28 }).map((_, i) => ({
         id: i,
         x: Math.random() * 100,
@@ -12,8 +16,8 @@ export function AnimatedBackground() {
         duration: Math.random() * 8 + 6,
         delay: Math.random() * 4,
       })),
-    [],
-  );
+    );
+  }, []);
 
   return (
     <div aria-hidden className="fixed inset-0 -z-10 overflow-hidden bg-background">
