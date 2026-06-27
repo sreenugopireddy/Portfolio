@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import {
-  FileText, Rocket, BookOpen, Award, GraduationCap, type LucideIcon,
+  FileText, Rocket, Award, GraduationCap, CheckCircle2, type LucideIcon,
 } from "lucide-react";
 import { achievements } from "@/data/portfolio";
 import { SectionHeading } from "./ui/SectionHeading";
@@ -8,7 +8,7 @@ import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 import { GlassCard } from "./ui/GlassCard";
 
 const iconMap: Record<string, LucideIcon> = {
-  FileText, Rocket, BookOpen, Award, GraduationCap,
+  FileText, Rocket, Award, GraduationCap, CheckCircle2,
 };
 
 export function Achievements() {
@@ -31,8 +31,8 @@ export function Achievements() {
             const Icon = iconMap[a.icon] ?? Award;
             return (
               <motion.div key={a.title} variants={fadeUp}>
-                <GlassCard className="p-5 h-full hover:-translate-y-1 transition-transform duration-500">
-                  <div className="inline-flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#a855f7]/30 to-[#27d3ff]/20 border border-white/10">
+                <GlassCard className="p-5 h-full hover:-translate-y-1 hover:border-[#00d4ff]/50 hover:shadow-[0_0_30px_rgba(0,212,255,0.25)] transition-all duration-500">
+                  <div className="inline-flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#a855f7]/30 to-[#00d4ff]/20 border border-white/10">
                     <Icon className="size-4 text-accent" />
                   </div>
                   <div className="mt-4 font-semibold text-sm">{a.title}</div>
