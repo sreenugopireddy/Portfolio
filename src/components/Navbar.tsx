@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import { Moon, Sparkles } from "lucide-react";
 import { navLinks } from "@/data/portfolio";
 import { GlowLink } from "./ui/GlowButton";
 import { cn } from "@/lib/utils";
@@ -21,23 +20,19 @@ export function Navbar() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-500",
-        scrolled ? "py-2" : "py-4",
-      )}
+      className={cn("fixed top-0 inset-x-0 z-50 transition-all duration-500", scrolled ? "py-2" : "py-4")}
     >
       <div className="mx-auto max-w-7xl px-4">
         <div
           className={cn(
             "flex items-center justify-between gap-4 rounded-full px-4 md:px-6 py-2.5 transition-all duration-500",
-            scrolled ? "glass-strong shadow-[0_8px_40px_-12px_rgba(109,74,255,0.4)]" : "glass",
+            scrolled ? "glass-strong shadow-[0_8px_40px_-12px_rgba(0,212,255,0.4)]" : "glass",
           )}
         >
           <a href="#home" className="flex items-center gap-2 group">
-            <span className="relative inline-flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-[#6d4aff] to-[#27d3ff] shadow-[0_0_20px_rgba(109,74,255,0.6)]">
-              <Sparkles className="size-4 text-white" />
+            <span className="relative inline-flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#4f8ef7] to-[#00d4ff] shadow-[0_0_20px_rgba(0,212,255,0.6)] font-display font-bold text-white text-sm">
+              SR
             </span>
-            <span className="font-display font-semibold tracking-tight">AI.Engineer</span>
           </a>
 
           <nav className="hidden lg:flex items-center gap-1">
@@ -53,12 +48,6 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <button
-              aria-label="Theme"
-              className="hidden md:inline-flex size-9 items-center justify-center rounded-full glass hover:bg-white/10 transition-colors"
-            >
-              <Moon className="size-4" />
-            </button>
             <GlowLink href="#contact" className="hidden sm:inline-flex px-5 py-2 text-sm">
               Let's Connect
             </GlowLink>

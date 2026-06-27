@@ -9,6 +9,7 @@ import { Experience } from "@/components/Experience";
 import { Research } from "@/components/Research";
 import { Services } from "@/components/Services";
 import { TechStack } from "@/components/TechStack";
+import { Certifications } from "@/components/Certifications";
 import { Achievements } from "@/components/Achievements";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -16,17 +17,17 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AI Engineer · LLM Systems · RAG Architect" },
+      { title: "Sreenivasa Reddy — AI Engineer | LLM Systems Architect" },
       {
         name: "description",
         content:
-          "Portfolio of an AI Engineer building production RAG, agentic workflows, and evaluation pipelines on Azure.",
+          "B.Tech Data Science student building production-grade LLM applications, RAG pipelines, and AI agents. Azure-deployed. Published researcher. Open to internships.",
       },
-      { property: "og:title", content: "AI Engineer · LLM Systems · RAG Architect" },
+      { property: "og:title", content: "Sreenivasa Reddy — AI Engineer | LLM Systems Architect" },
       {
         property: "og:description",
         content:
-          "Production LLM systems — hybrid retrieval, agents, and evaluation engineered on Azure.",
+          "Production-grade LLM applications, RAG pipelines, and AI agents — Azure-deployed. Published researcher.",
       },
       { property: "og:type", content: "website" },
     ],
@@ -48,6 +49,7 @@ function Index() {
         <Research />
         <Services />
         <TechStack />
+        <Certifications />
         <Achievements />
         <Contact />
       </main>
