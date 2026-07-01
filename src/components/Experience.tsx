@@ -11,7 +11,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title={<>A path through <span className="text-gradient">applied AI.</span></>}
-          description="Four years building data, ML, and LLM systems at increasing scale."
+          description="building data, ML, and LLM systems at increasing scale."
         />
 
         <div className="mt-16 relative">

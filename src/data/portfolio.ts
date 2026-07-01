@@ -9,9 +9,9 @@ export const profile = {
   email: "sreenugopireddy24@gmail.com",
   phone: "+91-6302390641",
   location: "Nandyal, Andhra Pradesh, India",
-  resumeUrl: "https://github.com/sreenugopireddy",
+  resumeUrl: "https://drive.google.com/file/d/1l5FIhUYwuY235JmJGLpGyVVv11p0rwlI/view?usp=sharing",
   github: "https://github.com/sreenugopireddy",
-  linkedin: "https://linkedin.com/in/sreenugopireddy",
+  linkedin: "https://www.linkedin.com/in/sreenu-gopireddy/",
   portfolio: "https://3d-portfolio-psi-five.vercel.app",
 };
 
@@ -70,9 +70,9 @@ export const projects: Project[] = [
       "Published technical research on RAG architecture design and LLM evaluation strategies in ReadyTensor community",
     ],
     links: [
-      { label: "Live Demo", href: "https://github.com/sreenugopireddy/Healthcare-Document-RAG-Assistant", icon: "Demo" },
+      { label: "Live Demo", href: "https://healthcare-document-rag-assistant-bszat4b6m3dbktycg7yvlc.streamlit.app/", icon: "Demo" },
       { label: "GitHub", href: "https://github.com/sreenugopireddy/Healthcare-Document-RAG-Assistant", icon: "GitHub" },
-      { label: "Research Paper", href: "https://github.com/sreenugopireddy/Healthcare-Document-RAG-Assistant", icon: "Paper" },
+      { label: "Research Paper", href: "https://app.readytensor.ai/publications/healthcare-document-rag-assitant-0EKLQ6QTqtCS", icon: "Paper" },
     ],
   },
   {
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     bullets: [
       "4-microservice LLM platform deployed on Azure Container Apps with full Docker + CI/CD pipelines — production-ready AI infra",
       "Automated eval pipeline with RAGAS + CI gates that block deployment if quality score drops below 0.85 threshold",
-      "Deterministic A/B routing for LLM model variants and PTU → PAYG automatic fallback, reducing inference cost ~50%",
+      "Deterministic A/B routing for LLM model variants and PTU to PAYG automatic fallback, reducing inference cost ~50%",
     ],
     links: [
       { label: "Live Demo", href: "https://llm-platform-gateway.greentree-67d78498.eastus.azurecontainerapps.io", icon: "Demo" },
@@ -114,34 +114,62 @@ export const projects: Project[] = [
       "Llama 3.3-70b (Groq) for ultra-fast LLM responses with Redis conversation memory maintaining full call context",
       "Supabase RLS policies for multi-tenant data isolation + Cal.com integration for automated appointment booking",
     ],
-    links: [{ label: "GitHub", href: "https://github.com/sreenugopireddy", icon: "GitHub" }],
-  },
-  {
-    title: "3D AI Portfolio Website",
-    tags: ["Next.js 14", "TypeScript", "Three.js", "GSAP", "Framer Motion", "Tailwind"],
-    arch: ["Next.js 14", "Three.js 3D", "GSAP Animations", "Vercel CDN"],
-    bullets: [
-      "Production-grade 3D portfolio with Three.js WebGL scenes, particle systems, and smooth GSAP scroll-triggered animations",
-      "Pixel-perfect dark theme with holographic UI elements, glowing neon accents, and orbital skill galaxy",
-      "Deployed to Vercel with 100/100 Lighthouse performance score and full TypeScript type safety",
-    ],
     links: [
-      { label: "Live Demo", href: "https://3d-portfolio-psi-five.vercel.app", icon: "Demo" },
       { label: "GitHub", href: "https://github.com/sreenugopireddy", icon: "GitHub" },
     ],
   },
   {
-    title: "Healthcare RAG — Streamlit Demo + Research",
-    tags: ["Python", "Streamlit", "LangChain", "FAISS", "Azure OpenAI", "RAGAS"],
-    arch: ["Streamlit UI", "LangChain RAG", "FAISS VectorDB", "Azure OpenAI", "Answer"],
+    title: "AI Data Analyst",
+    tags: ["Python", "Streamlit", "Groq", "LLaMA 3.3 70B", "Pandas", "Seaborn"],
+    arch: ["CSV Upload", "Pandas Analysis", "Groq LLaMA 3.3", "Plotly Charts", "AI Insights"],
     bullets: [
-      "Interactive Streamlit application demonstrating the Healthcare RAG pipeline with real-time document upload and Q&A",
-      "RAGAS evaluation dashboard showing live faithfulness, answer relevancy, and context precision metrics per query",
-      "Deployed on Streamlit Community Cloud with LinkedIn showcase and visual tech poster for knowledge sharing",
+      "Conversational AI agent that analyzes any CSV dataset using natural language — upload data, ask questions, get instant visualizations",
+      "LLaMA 3.3 70B via Groq generates business insights, descriptive stats, correlation heatmaps, and distribution plots automatically",
+      "Features revenue trend analysis, product performance charts, category comparison, and exportable AI insight reports as .txt",
     ],
     links: [
-      { label: "Live Demo", href: "https://github.com/sreenugopireddy/Healthcare-Document-RAG-Assistant", icon: "Demo" },
-      { label: "GitHub", href: "https://github.com/sreenugopireddy/Healthcare-Document-RAG-Assistant", icon: "GitHub" },
+      { label: "GitHub", href: "https://github.com/sreenugopireddy/AI-Data-Analyst", icon: "GitHub" },
+    ],
+  },
+  {
+    title: "Smart Grid Energy Demand Forecasting",
+    tags: ["Python", "TensorFlow", "LSTM", "Streamlit", "Plotly", "Scikit-learn"],
+    arch: ["AEP CSV Data", "MinMaxScaler", "LSTM Model", "Inverse Transform", "Plotly Dashboard"],
+    subTags: ["TensorFlow/Keras", "Pandas", "NumPy", "Joblib"],
+    bullets: [
+      "Stacked LSTM neural network forecasting electricity demand up to 48 hours ahead on real-world AEP hourly dataset from Kaggle",
+      "24-hour sliding window input through LSTM(64) to LSTM(32) to Dense layers, capturing daily demand cycles with high fidelity",
+      "Interactive Streamlit dashboard with Plotly visualizations, custom CSV upload support, and forecast export as CSV",
+    ],
+    links: [
+      { label: "Live Demo", href: "https://smart-grid-energy-demand-forecasting-zvjgfqxycvvqgcqerc5dzp.streamlit.app/", icon: "Demo" },
+      { label: "GitHub", href: "https://github.com/sreenugopireddy/Smart-grid-energy-demand-forecasting", icon: "GitHub" },
+    ],
+  },
+  {
+    title: "Power BI Sales Performance Dashboard",
+    tags: ["Power BI", "DAX", "ETL", "Data Modeling", "KPI Analytics"],
+    arch: ["Raw Data", "ETL Cleaning", "Data Model", "DAX Measures", "Executive Dashboard"],
+    bullets: [
+      "End-to-end Power BI analytics solution covering data cleaning, modeling, 12+ DAX calculations, and executive-ready KPI visualizations",
+      "Enables stakeholders to monitor revenue trends, product performance, regional breakdowns, and sales targets in real time",
+      "Built during Microsoft Elevate (AICTE) Power BI internship — automated ETL workflows with optimized analytical pipelines",
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/sreenugopireddy/powerbi-sales-performance-dashboard", icon: "GitHub" },
+    ],
+  },
+  {
+    title: "Financial Dashboard",
+    tags: ["Python", "Streamlit", "Plotly", "Pandas", "Financial Analytics"],
+    arch: ["Financial Data", "Pandas Processing", "Plotly Charts", "Streamlit UI", "Insights"],
+    bullets: [
+      "Interactive financial analytics dashboard built with Streamlit and Plotly for real-time portfolio and market data visualization",
+      "Features P&L tracking, asset allocation charts, trend analysis, and customizable financial KPI monitoring",
+      "Clean, responsive UI with dark theme designed for financial analysts and portfolio managers",
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/sreenugopireddy/Financial_Dashboard", icon: "GitHub" },
     ],
   },
 ];
@@ -160,20 +188,6 @@ export const experience = [
     org: "Microsoft Elevate (AICTE Collaboration)",
     summary:
       "Built large-scale data reporting systems with 12+ DAX measures and automated ETL workflows, optimizing KPI-driven analytical pipelines for real-world business intelligence use cases.",
-  },
-  {
-    year: "2026",
-    role: "Published Researcher — RAG Architecture",
-    org: "ReadyTensor Research Community",
-    summary:
-      "Published technical research on RAG systems and LLM evaluation strategies including benchmark design and MLflow experiment tracking methodologies.",
-  },
-  {
-    year: "2026",
-    role: "LLM Platform Architect",
-    org: "Azure Cloud — Production Deployment",
-    summary:
-      "Designed and deployed production-grade LLM platform with CI/CD, automated eval gates, A/B routing, and live monitoring on Azure Container Apps.",
   },
 ];
 
@@ -196,7 +210,7 @@ export const research = {
     "Benchmark design for domain-specific RAG systems",
     "Reproducible experiment methodology achieving 1.0 faithfulness",
   ],
-  link: "https://github.com/sreenugopireddy/Healthcare-Document-RAG-Assistant",
+  link: "https://app.readytensor.ai/publications/healthcare-document-rag-assitant-0EKLQ6QTqtCS",
 };
 
 export const services = [
@@ -217,12 +231,42 @@ export const techStack = [
 ];
 
 export const certifications = [
-  { icon: "Cloud", title: "AWS Machine Learning Engineer Associate", org: "Amazon Web Services · 2026" },
-  { icon: "Search", title: "RAG Systems Expert", org: "ReadyTensor Research Community · 2026" },
-  { icon: "Database", title: "Oracle OCI AI Foundations Associate", org: "Oracle Cloud Infrastructure · 2025" },
-  { icon: "Code2", title: "SQL for Data Science", org: "UC Davis / Coursera" },
-  { icon: "BarChart3", title: "Power BI — Data Analytics", org: "Microsoft" },
-  { icon: "Shield", title: "Zscaler Zero Trust Associate (ZTCA)", org: "Zscaler" },
+  {
+    icon: "Cloud",
+    title: "AWS Machine Learning Engineer Associate",
+    org: "Amazon Web Services · 2026",
+    link: "https://drive.google.com/file/d/1kJTi7YkypMZuJexfZL6L7ZiS5NVrl9rd/view",
+  },
+  {
+    icon: "Search",
+    title: "RAG Systems Expert",
+    org: "ReadyTensor Research Community · 2026",
+    link: "https://drive.google.com/file/d/1uGNfucIQZP6nqoOFYtLY1c8R59-1AyfV/view",
+  },
+  {
+    icon: "Database",
+    title: "Oracle OCI AI Foundations Associate",
+    org: "Oracle Cloud Infrastructure · 2025",
+    link: "https://drive.google.com/file/d/19WCTBgtK15UTkUcFOVmXcCbMHKCbbpCn/view",
+  },
+  {
+    icon: "Code2",
+    title: "SQL for Data Science",
+    org: "UC Davis / Coursera",
+    link: "https://drive.google.com/file/d/1lKwT_hw84nFNdDpOVqLVZZ-Si8XRSJzI/view",
+  },
+  {
+    icon: "BarChart3",
+    title: "Power BI — Harnessing the Power of Data",
+    org: "Microsoft",
+    link: "https://drive.google.com/file/d/1M8dep_W2fT8pmPH2nMXBfL_LbGJ43XR5/view",
+  },
+  {
+    icon: "Shield",
+    title: "Zscaler Zero Trust Associate (ZTCA)",
+    org: "Zscaler",
+    link: "https://drive.google.com/file/d/185c3uGkQuutnEGbDU379p6WMlRIdYl6f/view",
+  },
 ];
 
 export const achievements = [

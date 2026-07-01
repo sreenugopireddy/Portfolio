@@ -59,7 +59,7 @@ export function Footer() {
           <p className="text-[11px] text-muted-foreground">
             © 2026 {profile.name}. All rights reserved.
           </p>
-          <p className="text-[11px] text-muted-foreground">Built with TanStack Start · Deployed on Lovable</p>
+          <p className="text-[11px] text-muted-foreground">Built with React · Deployed on Vercel</p>
         </div>
       </div>
     </footer>

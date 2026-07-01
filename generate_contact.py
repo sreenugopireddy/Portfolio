@@ -1,4 +1,10 @@
-import { useState, useRef, useEffect } from "react";
+"""
+Run this script to generate the clean Contact.tsx file.
+Usage: python generate_contact.py
+It will create Contact.tsx in the current directory.
+"""
+
+content = r'''import { useState, useRef, useEffect } from "react";
 import { motion } from "motion/react";
 import {
   Mail, ArrowUpRight, Download, MapPin, Phone,
@@ -360,3 +366,19 @@ function InfoRow({
     <div className={cls}>{inner}</div>
   );
 }
+'''
+
+output_path = "Contact.tsx"
+
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write(content)
+
+print(f"✅ Successfully created: {output_path}")
+print(f"📁 File size: {len(content)} characters")
+print()
+print("Next steps:")
+print("1. Copy Contact.tsx to: src/components/Contact.tsx")
+print("2. Create .env file in project root with:")
+print("   VITE_GROQ_API_KEY=gsk_your_actual_groq_key_here")
+print("3. Update resumeUrl in src/data/portfolio.ts with your Google Drive link")
+print("4. Get free Groq API key at: console.groq.com")
